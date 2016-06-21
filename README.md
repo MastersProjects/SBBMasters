@@ -1,4 +1,4 @@
 # SBBMasters
 
 TBZ schoolproject
-![data](https://img.shields.io/badge/<data>-<abfahrten_zhb.csv>-<green>.svg)
+![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
