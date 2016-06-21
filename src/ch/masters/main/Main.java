@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		TrainDepartureAdmin trainDepartureAdmin = new TrainDepartureAdmin();
 		
-		for(Departure departure : trainDepartureAdmin.getAllDepartures()){
+		for(Departure departure : trainDepartureAdmin.getPlatformDepartures("43/44", "9:00")){
 			System.out.println(departure.getName());
 		}
 	}
