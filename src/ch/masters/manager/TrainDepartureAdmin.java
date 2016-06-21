@@ -50,7 +50,28 @@ public class TrainDepartureAdmin {
 	 * @return ArrayList out of max 20 Departure objects
 	 */
 	public ArrayList<Departure> getDepartures(String time) {
+		ArrayList<Departure> departures = new ArrayList<>();
 
+		int counter = 0; //counter max in arraylist
+		for (Departure departure : this.getAllDepartures()) {
+			if (counter < 20) {
+				Date inputDate = null; //input time
+				Date departureDate = null; //departure time
+				try {
+					//Parsing to date
+					departureDate = new SimpleDateFormat("HH:mm").parse(departure.getDeparture());
+					inputDate = new SimpleDateFormat("HH:mm").parse(time);
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+				//check if platform and departure date is equal or after input date
+				if (inputDate.equals(departureDate) || departureDate.after(inputDate)) {
+					departures.add(departure);
+					counter++; //count
+				}
+			}
+		}
+		return departures;
 	}
 
 	/**
@@ -77,7 +98,7 @@ public class TrainDepartureAdmin {
 				} catch (ParseException e) {
 					e.printStackTrace();
 				}
-				//check if platform and departure date is equal or after input date
+				//check if departure date is equal or after input date
 				if (platform.equals(departure.getPlatform()) && (inputDate.equals(departureDate) || departureDate.after(inputDate))) {
 					departures.add(departure);
 					counter++; //count
