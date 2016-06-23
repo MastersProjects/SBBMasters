@@ -30,9 +30,9 @@ public ArrayList<Departure> getDepartures(String time) {}
 **Get the next 2 depatrures on a platform (Time with format hh:mm)**
 ```java
 public ArrayList<Departure> getPlatformDepartures(String platform, String time) {}
-```java
-**Get the next depatrures to a city**
 ```
+**Get the next depatrures to a city**
+```java
 public ArrayList<Departure> getDeparturestToCity(String city) {}
 ```
 
