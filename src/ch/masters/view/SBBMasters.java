@@ -111,6 +111,9 @@ public class SBBMasters extends JFrame{
 		departuresByTime.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				table.setModel(getDepartureTableModel(trainDepartureAdmin.getDepartures(time1.getText())));
+				time2.setText("");
+				via.setText("");
+				platform.setText("");
 			}
 		});
 		
@@ -170,6 +173,8 @@ public class SBBMasters extends JFrame{
 		departuresByPlatformTime.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				table.setModel(getDepartureTableModel(trainDepartureAdmin.getPlatformDepartures(platform.getText(), time2.getText())));
+				via.setText("");
+				time1.setText("");
 			}
 		});
 		
@@ -212,6 +217,9 @@ public class SBBMasters extends JFrame{
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				table.setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturestToCity(via.getText())));
+				platform.setText("");
+				time2.setText("");
+				time1.setText("");
 			}
 		});
 		
