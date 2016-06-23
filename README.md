@@ -2,6 +2,18 @@
 ##TBZ Schoolproject
 The assignment of this project was to read data from a csv file and do some simple functions to show diffrent informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
 
+##Assessment Grid
+|                                     |not good |ok       |very good|
+| ----------------------------------- | :-----: | :-----: | :-----: |
+|*Structured code*                    |0        |3        |6        |
+|*Commented code*                     |0        |3        |6        |
+|*Functionality*                      |1        |5        |8        |
+|*User friendly, usability*           |0        |2        |4        |
+|*Structograms*                       |0        |5        |8        |
+|*Presentation*                       |0        |2        |4        |
+|*Work report (with Division of task)*|0        |3        |6        |
+
+
 ## Data ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
 
 File with data received from school in application folder resources/data/
@@ -46,5 +58,5 @@ See also the list of [contributors](https://github.com/MastersProjects/SBBMaster
 - [x] GUI
 - [ ] Validation inputfields
 - [ ] Outsource Actionlistener
-- [ ] Struktogramm
+- [ ] Structograms
 - [ ] Presentation
