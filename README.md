@@ -43,7 +43,7 @@ See also the list of [contributors](https://github.com/MastersProjects/SBBMaster
 
 ##TODO
 - [x] Functions
-- [ ] GUI
+- [x] GUI
 - [ ] Validation inputfields
 - [ ] Outsource Actionlistener
 - [ ] Struktogramm
