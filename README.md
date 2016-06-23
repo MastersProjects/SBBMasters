@@ -42,6 +42,9 @@ TODO
 See also the list of [contributors](https://github.com/MastersProjects/SBBMasters/graphs/contributors) who participated in this project.
 
 ##TODO
-* Validation inputfields
-* Outsource Actionlistener
-* Struktogramm
+- [x] Functions
+- [ ] GUI
+- [ ] Validation inputfields
+- [ ] Outsource Actionlistener
+- [ ] Struktogramm
+- [ ] Presentation
