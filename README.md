@@ -20,23 +20,23 @@ File with data received from school in application folder resources/data/
 
 ## Functions
 **Get All departures from Zurich mainstation**
-```
+```java
 public ArrayList<Departure> getAllDepartures() {}
 ```
 **Get the next 20 depatrures (Time with format hh:mm)**
-```
+```java
 public ArrayList<Departure> getDepartures(String time) {}
 ```
 **Get the next 2 depatrures on a platform (Time with format hh:mm)**
-```
+```java
 public ArrayList<Departure> getPlatformDepartures(String platform, String time) {}
-```
+```java
 **Get the next depatrures to a city**
 ```
 public ArrayList<Departure> getDeparturestToCity(String city) {}
 ```
 
-## Struktogramme
+## Structograms
 
 TODO
 
