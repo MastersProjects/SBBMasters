@@ -195,10 +195,10 @@ public class SBBMasters extends JFrame{
 		table.setEnabled(false);
 		scrollPane.setViewportView(table);
 		
-		allDeparture.addActionListener(newSBBMastersListener(this));
+		allDepartures.addActionListener(new SBBMastersListener(this));
 		departuresByTime.addActionListener(new SBBMastersListener(this));
 		departuresByPlatformTime.addActionListener(new SBBMastersListener(this));
-		departuresByView.addActionListener(new SBBMastersListener(this));
+		departuresByVia.addActionListener(new SBBMastersListener(this));
 		
 		setVisible(true);
 	}
