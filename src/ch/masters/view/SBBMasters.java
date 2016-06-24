@@ -6,10 +6,6 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Vector;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -43,9 +39,7 @@ public class SBBMasters extends JFrame{
 	private JTextField platform;
 	private JTextField time2;
 	private JTextField via;
-	
-	private TrainDepartureAdmin trainDepartureAdmin;
-	
+
 	public SBBMasters() {
 		setBounds(100,100,875,600);
 		getContentPane().setLayout(new BorderLayout(0, 0));
@@ -56,9 +50,7 @@ public class SBBMasters extends JFrame{
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
-		
-		trainDepartureAdmin = new TrainDepartureAdmin();
-		
+
 		JPanel panel = new JPanel();
 		getContentPane().add(panel, BorderLayout.NORTH);
 		panel.setLayout(new GridLayout(4, 0, 0, 0));
@@ -69,13 +61,7 @@ public class SBBMasters extends JFrame{
 		
 		JButton allDepartures = new JButton("Departures");
 		
-		//ActionListener
-		allDepartures.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				table.setModel(getDepartureTableModel(trainDepartureAdmin.getAllDepartures()));
-			}
-		});
-		
+
 		panel_1.add(allDepartures);
 		
 		JPanel panel_2 = new JPanel();
@@ -107,16 +93,7 @@ public class SBBMasters extends JFrame{
 		
 		JButton departuresByTime = new JButton("Departures by time");
 		
-		//ActionListener
-		departuresByTime.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				table.setModel(getDepartureTableModel(trainDepartureAdmin.getDepartures(time1.getText())));
-				time2.setText("");
-				via.setText("");
-				platform.setText("");
-			}
-		});
-		
+
 		GridBagConstraints gbc_departuresByTime = new GridBagConstraints();
 		gbc_departuresByTime.insets = new Insets(0, 0, 0, 5);
 		gbc_departuresByTime.gridx = 4;
@@ -169,15 +146,7 @@ public class SBBMasters extends JFrame{
 		
 		JButton departuresByPlatformTime = new JButton("Departures by platform and time");
 		
-		//ActionListener
-		departuresByPlatformTime.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				table.setModel(getDepartureTableModel(trainDepartureAdmin.getPlatformDepartures(platform.getText(), time2.getText())));
-				via.setText("");
-				time1.setText("");
-			}
-		});
-		
+
 		GridBagConstraints gbc_departuresByPlatformTime = new GridBagConstraints();
 		gbc_departuresByPlatformTime.insets = new Insets(0, 0, 0, 5);
 		gbc_departuresByPlatformTime.gridx = 7;
@@ -211,23 +180,13 @@ public class SBBMasters extends JFrame{
 		panel_4.add(via, gbc_via);
 		via.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Departures by via");
-		
-		//ActionListener
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				table.setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturestToCity(via.getText())));
-				platform.setText("");
-				time2.setText("");
-				time1.setText("");
-			}
-		});
+		JButton departuresByVia = new JButton("Departures by via");
 		
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
 		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
 		gbc_btnNewButton.gridx = 4;
 		gbc_btnNewButton.gridy = 0;
-		panel_4.add(btnNewButton, gbc_btnNewButton);
+		panel_4.add(departuresByVia, gbc_btnNewButton);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		getContentPane().add(scrollPane, BorderLayout.CENTER);
@@ -236,48 +195,14 @@ public class SBBMasters extends JFrame{
 		table.setEnabled(false);
 		scrollPane.setViewportView(table);
 		
+		allDeparture.addActionListener(newSBBMastersListener(this));
+		departuresByTime.addActionListener(new SBBMastersListener(this));
+		departuresByPlatformTime.addActionListener(new SBBMastersListener(this));
+		departuresByView.addActionListener(new SBBMastersListener(this));
+		
 		setVisible(true);
 	}
 	
-	
-	/**
-	 * Creates TableModel for departures Table
-	 * @param departures
-	 * @return TableModel
-	 */
-	private TableModel getDepartureTableModel(ArrayList<Departure> departures){
-		/*
-		 * Model for JTables
-		 */
-		//Vector mit den Titeln erstellen
-		Vector<String> columnNames = new Vector<String>();
-		columnNames.addElement("Line");
-		columnNames.addElement("Departure Time");
-		columnNames.addElement("To");
-		columnNames.addElement("Via");
-		columnNames.addElement("Platform");
-	
-		//Vector mit den Datensätze erstellen
-		@SuppressWarnings("rawtypes")
-		Vector<Vector> data = new Vector<Vector>();
-		
-		//erstellt ein Vector mit den Noten
-		for(Departure departure : departures){
-			
-			Vector<Object> row = new Vector<Object>();
-				
-			row.addElement(departure.getName());	
-			row.addElement(departure.getDeparture());
-			row.addElement(departure.getTo());
-			row.addElement(departure.getVia());
-			row.addElement(departure.getPlatform());
-			
-			data.addElement(row);						
-		}
-		
-		//Tabel Model erstellen
-		TableModel model = new DefaultTableModel(data, columnNames);
-		return model;
-	}
+	//TODO getter and setter
 
 }
