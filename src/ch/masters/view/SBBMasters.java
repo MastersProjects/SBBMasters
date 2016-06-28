@@ -17,11 +17,8 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.LineBorder;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 
-import ch.masters.manager.TrainDepartureAdmin;
-import ch.masters.model.Departure;
+import ch.masters.listener.SBBMastersListener;
 
 /**
  * 
@@ -202,7 +199,48 @@ public class SBBMasters extends JFrame{
 		
 		setVisible(true);
 	}
+
+	public JTable getTable() {
+		return table;
+	}
+
+	public void setTable(JTable table) {
+		this.table = table;
+	}
+
+	public JTextField getTime1() {
+		return time1;
+	}
+
+	public void setTime1(JTextField time1) {
+		this.time1 = time1;
+	}
+
+	public JTextField getPlatform() {
+		return platform;
+	}
+
+	public void setPlatform(JTextField platform) {
+		this.platform = platform;
+	}
+
+	public JTextField getTime2() {
+		return time2;
+	}
+
+	public void setTime2(JTextField time2) {
+		this.time2 = time2;
+	}
+
+	public JTextField getVia() {
+		return via;
+	}
+
+	public void setVia(JTextField via) {
+		this.via = via;
+	}
 	
-	//TODO getter and setter
+	
+	
 
 }
