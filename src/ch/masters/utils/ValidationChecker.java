@@ -39,7 +39,6 @@ public class ValidationChecker {
 			new SimpleDateFormat("HH:mm").parse(string);
 			return true;
 		} catch (ParseException e) {
-			e.printStackTrace();
 			return false;			
 		}
 	}

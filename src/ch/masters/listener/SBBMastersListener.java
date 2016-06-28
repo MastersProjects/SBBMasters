@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Vector;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
@@ -47,7 +48,7 @@ public class SBBMastersListener implements ActionListener{
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDepartures(sbbMasters.getTime1().getText())));
 				emptyTestFields();
 			}else{
-				//TODO Message
+				JOptionPane.showMessageDialog(sbbMasters, "Zeitformat ung\u00fcltig", "Error", JOptionPane.ERROR_MESSAGE);
 			}
 			
 		//Button Departure by platform and time
@@ -57,7 +58,9 @@ public class SBBMastersListener implements ActionListener{
 			if(!validationChecker.checkEmpty(sbbMasters.getPlatform().getText()) && validationChecker.checkTimeFormat(sbbMasters.getTime2().getText())){
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getPlatformDepartures(sbbMasters.getPlatform().getText(), sbbMasters.getTime2().getText())));
 				emptyTestFields();
-			} //TODO Message
+			} else {
+				JOptionPane.showMessageDialog(sbbMasters, "Gleis oder Zeitformat ung\u00fcltig", "Error", JOptionPane.ERROR_MESSAGE);
+			}
 			
 		//Button Departure by via
 		}else if(arg0.getActionCommand().equals("Departures by via")){
@@ -67,7 +70,7 @@ public class SBBMastersListener implements ActionListener{
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturestToCity(sbbMasters.getVia().getText())));
 				emptyTestFields();
 			}else{
-				//TODO Message
+				JOptionPane.showMessageDialog(sbbMasters, "Via darf nicht leer sein", "Error", JOptionPane.ERROR_MESSAGE);
 			}
 		}
 		
@@ -102,7 +105,7 @@ public class SBBMastersListener implements ActionListener{
 		columnNames.addElement("Via");
 		columnNames.addElement("Platform");
 	
-		//Vector mit den Datensätze erstellen
+		//Vector mit den Datensï¿½tze erstellen
 		@SuppressWarnings("rawtypes")
 		Vector<Vector> data = new Vector<Vector>();
 		

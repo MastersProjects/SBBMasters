@@ -7,6 +7,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.swing.JOptionPane;
+
 import ch.masters.model.Departure;
 import ch.masters.utils.DataScanner;
 
@@ -37,7 +39,7 @@ public class TrainDepartureAdmin {
 				departures.add(departure);
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			JOptionPane.showMessageDialog(null,"File Not Found", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 		return departures;
 	}
@@ -121,6 +123,9 @@ public class TrainDepartureAdmin {
 			if (departure.getVia().contains(city)) {
 				departures.add(departure);
 			}
+		}
+		if(departures.isEmpty()){
+			JOptionPane.showMessageDialog(null, "Kein Resultat gefunden", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 		return departures;
 	}
