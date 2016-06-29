@@ -38,7 +38,7 @@ public class SBBMastersListener implements ActionListener{
 		//Button Departure
 		if(arg0.getActionCommand().equals("Departures")){
 			sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getAllDepartures()));
-			emptyTestFields();
+			emptyTextFields();
 			
 		//Button Departure by time
 		}else if(arg0.getActionCommand().equals("Departures by time")){
@@ -46,7 +46,7 @@ public class SBBMastersListener implements ActionListener{
 			//Validation check
 			if(validationChecker.checkTimeFormat(sbbMasters.getTime1().getText())){
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDepartures(sbbMasters.getTime1().getText())));
-				emptyTestFields();
+				emptyTextFields();
 			}else{
 				JOptionPane.showMessageDialog(sbbMasters, "Zeitformat ung\u00fcltig", "Error", JOptionPane.ERROR_MESSAGE);
 			}
@@ -57,7 +57,7 @@ public class SBBMastersListener implements ActionListener{
 			//Validation check
 			if(!validationChecker.checkEmpty(sbbMasters.getPlatform().getText()) && validationChecker.checkTimeFormat(sbbMasters.getTime2().getText())){
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getPlatformDepartures(sbbMasters.getPlatform().getText(), sbbMasters.getTime2().getText())));
-				emptyTestFields();
+				emptyTextFields();
 			} else {
 				JOptionPane.showMessageDialog(sbbMasters, "Gleis oder Zeitformat ung\u00fcltig", "Error", JOptionPane.ERROR_MESSAGE);
 			}
@@ -68,7 +68,7 @@ public class SBBMastersListener implements ActionListener{
 			//Validation check
 			if(!validationChecker.checkEmpty(sbbMasters.getVia().getText())){
 				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturestToCity(sbbMasters.getVia().getText())));
-				emptyTestFields();
+				emptyTextFields();
 			}else{
 				JOptionPane.showMessageDialog(sbbMasters, "Via darf nicht leer sein", "Error", JOptionPane.ERROR_MESSAGE);
 			}
@@ -80,7 +80,7 @@ public class SBBMastersListener implements ActionListener{
 	/**
 	 * Function for empty the TextFields
 	 */
-	private void emptyTestFields(){
+	private void emptyTextFields(){
 		sbbMasters.getTime1().setText("");
 		sbbMasters.getTime2().setText("");
 		sbbMasters.getPlatform().setText("");
