@@ -67,7 +67,7 @@ public class SBBMastersListener implements ActionListener{
 			
 			//Validation check
 			if(!validationChecker.checkEmpty(sbbMasters.getVia().getText())){
-				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturestToCity(sbbMasters.getVia().getText())));
+				sbbMasters.getTable().setModel(getDepartureTableModel(trainDepartureAdmin.getDeparturesToCity(sbbMasters.getVia().getText())));
 				emptyTextFields();
 			}else{
 				JOptionPane.showMessageDialog(sbbMasters, "Via darf nicht leer sein", "Error", JOptionPane.ERROR_MESSAGE);
