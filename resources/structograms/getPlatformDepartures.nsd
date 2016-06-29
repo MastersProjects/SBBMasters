@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.24-11" text="&#34;getPlatformDepartures&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ArrayList departures&#34;" comment="&#34;init variable departure&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;counter = 0&#34;" comment="&#34;init variable counter&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;for ( Departure departure : getAllDeparture() )&#34;" comment="" counterVar="dummy_counter" startValue="for ( Departure departure : getAllDeparture() )" stepConst="1" style="FREETEXT" color="ffffff">
+			<qFor>
+				<alternative text="&#34;counter &#60; 2&#34;" comment="" color="ffffff">
+					<qTrue>
+						<alternative text="&#34;platformCVS = platformINPUT and dateCSV =&#62; dateInput&#34;" comment="" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;add departure to ArrayList departures&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;count counter +1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+							</qFalse>
+						</alternative>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<instruction text="&#34;return ArrayList departures&#34;" comment="" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
