@@ -38,7 +38,7 @@ public ArrayList<Departure> getDeparturestToCity(String city) {}
 
 ## Structograms
 
-TODO
+![getPlatformDepartures](/resources/structograms/getPlatformDepartures.png)
 
 ## Built With
 
