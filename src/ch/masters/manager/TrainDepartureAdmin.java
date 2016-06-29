@@ -117,7 +117,7 @@ public class TrainDepartureAdmin {
 	 *            via city
 	 * @return ArrayList out of Departure objects
 	 */
-	public ArrayList<Departure> getDeparturestToCity(String city) {
+	public ArrayList<Departure> getDeparturesToCity(String city) {
 		ArrayList<Departure> departures = new ArrayList<>();
 		for (Departure departure : this.getAllDepartures()) {
 			if (departure.getVia().contains(city)) {
