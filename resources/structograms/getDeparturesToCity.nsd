@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.24-11" text="&#34;getDeparturesToCity&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;ArrayList departures&#34;" comment="&#34;init ArrayList departures&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;for ( Departure departure : getAllDepartures() )&#34;" comment="&#34;&#34;" counterVar="dummy_counter" startValue="for ( Departure departure : getAllDepartures() )" stepConst="1" style="FREETEXT" color="ffffff">
+			<qFor>
+				<alternative text="&#34;cityCSV contains cityINPUT&#34;" comment="&#34;&#34;" color="ffffff">
+					<qTrue>
+						<instruction text="&#34;add departure to ArrayList departures&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qTrue>
+					<qFalse>
+					</qFalse>
+				</alternative>
+			</qFor>
+		</for>
+		<alternative text="&#34;ArrayList departures is empty&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Error Message: &#34;&#34;Kein Resultat gefunden&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;return ArrayList departures&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
