@@ -56,7 +56,7 @@ See also the list of [contributors](https://github.com/MastersProjects/SBBMaster
 ##TODO
 - [x] Functions
 - [x] GUI
-- [ ] Validation inputfields
+- [x] Validation inputfields
 - [x] Outsource Actionlistener
 - [ ] Structograms
 - [ ] Presentation
