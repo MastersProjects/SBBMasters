@@ -39,6 +39,7 @@ public ArrayList<Departure> getDeparturestToCity(String city) {}
 ## Structograms
 
 ![getPlatformDepartures](/resources/structograms/getPlatformDepartures.png)
+![getDeparturesToCity](/resources/structograms/getDeparturesToCity.png)
 
 ## Built With
 
@@ -58,5 +59,5 @@ See also the list of [contributors](https://github.com/MastersProjects/SBBMaster
 - [x] GUI
 - [x] Validation inputfields
 - [x] Outsource Actionlistener
-- [ ] Structograms
+- [x] Structograms
 - [ ] Presentation
