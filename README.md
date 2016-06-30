@@ -3,12 +3,12 @@ The assignment of this project was to read data from a csv file and do some simp
 
 ## Summary
 
-#### [Assessment Grid](#assessment-grid)
-#### [Data](#data)
-#### [Functions](#functions)
-#### [Structograms](#dtructograms)
-#### [Built with](#built-with)
-#### [Authors](#authors)
+#### [-Assessment Grid](#assessment-grid)
+#### [-Data](#data)
+#### [-Functions](#functions)
+#### [-Structograms](#structograms)
+#### [-Built with](#built-with)
+#### [-Authors](#authors)
 
 
 ### Assessment Grid
