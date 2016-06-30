@@ -1,17 +1,17 @@
 # SBBMasters ![data](https://img.shields.io/badge/Status-development-orange.svg)
 The assignment of this project was to read data from a csv file and do some simple functions to show diffrent informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
 
-##Summary
+## Summary
 
-###[Assessment Grid](#assessment-grid)
-###[Data](#data)
-###[Functions](#functions)
-###[Structograms](#dtructograms)
-###[Built with](#built-with)
-###[Authors](#authors)
+#### [Assessment Grid](#assessment-grid)
+#### [Data](#data)
+#### [Functions](#functions)
+#### [Structograms](#dtructograms)
+#### [Built with](#built-with)
+#### [Authors](#authors)
 
 
-##Assessment Grid
+### Assessment Grid
 |                                       |not good |ok       |very good|
 | ------------------------------------- | :-----: | :-----: | :-----: |
 |**Structured code**                    |0        |3        |6        |
@@ -23,11 +23,11 @@ The assignment of this project was to read data from a csv file and do some simp
 |**Work report (with Division of task)**|0        |3        |6        |
 
 
-## Data ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
+### Data ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
 
 File with data received from school in application folder resources/data/
 
-## Functions
+### Functions
 **Get All departures from Zurich mainstation**
 ```java
 public ArrayList<Departure> getAllDepartures() {}
@@ -45,25 +45,25 @@ public ArrayList<Departure> getPlatformDepartures(String platform, String time) 
 public ArrayList<Departure> getDeparturestToCity(String city) {}
 ```
 
-## Structograms
+### Structograms
 
 ![getPlatformDepartures](/resources/structograms/getPlatformDepartures.png)
 ![getDeparturesToCity](/resources/structograms/getDeparturesToCity.png)
 
-## Built With
+### Built With
 
 * Java 8 
 * Eclipse Mars
 * Structorizer
 
-## Authors
+### Authors
 
 * **Chiramet Phong Penglerd** - *Code, GUI and Documentation* - [Phong6698](https://github.com/Phong6698)
 * **Elia Perenzin** - *Code and Documentation* - [zperee](https://github.com/zperee)
 
 See also the list of [contributors](https://github.com/MastersProjects/SBBMasters/graphs/contributors) who participated in this project.
 
-##TODO
+### TODO
 - [x] Functions
 - [x] GUI
 - [x] Validation inputfields
