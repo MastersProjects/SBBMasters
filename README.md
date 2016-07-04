@@ -25,7 +25,7 @@ The assignment of this project was to read data from a csv file and do some simp
 
 ### Data 
 ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
-![File](/resources/data/abfahrten_zhb.csv)
+
 
 File with data received from school in application folder resources/data/
 
