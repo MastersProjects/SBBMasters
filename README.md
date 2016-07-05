@@ -4,12 +4,12 @@ Module 411 - Design and implement data structures and algorithms
 
 ## Summary
 
-#### [- Assessment Grid](#assessment-grid)
-#### [- Data](#data)
-#### [- Functions](#functions)
-#### [ -Structograms](#structograms)
-#### [- Built with](#built-with)
-#### [- Authors](#authors)
+#### -[Assessment Grid](#assessment-grid)
+#### -[Data](#data)
+#### -[Functions](#functions)
+#### -[Structograms](#structograms)
+#### -[Built with](#built-with)
+#### -[Authors](#authors)
 
 ### Description
 The assignment of this project is to read data from a [csv file](#data) and do some simple [functions](#functions) to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
@@ -26,15 +26,12 @@ The assignment of this project is to read data from a [csv file](#data) and do s
 |**Presentation**                       |0        |2        |4        |
 |**Work report (with Division of task)**|0        |3        |6        |
 
-Max. 42 Points; Formula for the mark: 1 + 5 * (Reached Points / Max. Points)
+Max. 42 Points; Formula for the mark: (Reached Points / Max. Points) * 5 + 1
 
 
-### Data 
-![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
-[File](/resources/data/abfahrten_zhb.csv)
-
-
-File with data received from school in application folder resources/data/
+### Data ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
+File with data received from school in application folder /resources/data/abfahrten_zhb.csv
+**[File](/resources/data/abfahrten_zhb.csv)**
 
 
 ### Functions
