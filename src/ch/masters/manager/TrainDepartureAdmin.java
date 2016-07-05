@@ -12,6 +12,12 @@ import javax.swing.JOptionPane;
 import ch.masters.model.Departure;
 import ch.masters.utils.DataScanner;
 
+/**
+ * This class contains the function which parse the csv file
+ * @author Chiramet Phong Penglerd, Elia Perenzin
+ * @year 2016
+ * @version 1.0
+ */
 public class TrainDepartureAdmin {
 
 	/**
@@ -25,7 +31,7 @@ public class TrainDepartureAdmin {
 		BufferedReader br = dataScanner.getFile("resources/data/abfahrten_zhb.csv");
 
 		String line = "";
-		String cvsSplitBy = ";";
+		String cvsSplitBy = ";"; //csv splitted by
 		try {
 			br.readLine(); // skip first line
 			while ((line = br.readLine()) != null) {
@@ -120,6 +126,7 @@ public class TrainDepartureAdmin {
 	public ArrayList<Departure> getDeparturesToCity(String city) {
 		ArrayList<Departure> departures = new ArrayList<>();
 		for (Departure departure : this.getAllDepartures()) {
+			//check if input is in the via String
 			if (departure.getVia().contains(city)) {
 				departures.add(departure);
 			}

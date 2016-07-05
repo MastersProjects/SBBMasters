@@ -21,7 +21,6 @@ import javax.swing.border.LineBorder;
 import ch.masters.listener.SBBMastersListener;
 
 /**
- * 
  * GUI for the application
  * 
  * @author Chiramet Phong Penglerd, Elia Perenzin
@@ -42,6 +41,8 @@ public class SBBMasters extends JFrame{
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
+		
+		//Look and Feel
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
@@ -192,6 +193,7 @@ public class SBBMasters extends JFrame{
 		table.setEnabled(false);
 		scrollPane.setViewportView(table);
 		
+		//Add actionlistener
 		allDepartures.addActionListener(new SBBMastersListener(this));
 		departuresByTime.addActionListener(new SBBMastersListener(this));
 		departuresByPlatformTime.addActionListener(new SBBMastersListener(this));
@@ -240,7 +242,4 @@ public class SBBMasters extends JFrame{
 		this.via = via;
 	}
 	
-	
-	
-
 }

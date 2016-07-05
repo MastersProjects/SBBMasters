@@ -7,8 +7,7 @@ import java.io.IOException;
 import ch.masters.model.Departure;
 
 /**
- * 
- * @description Parser for the data. Data comes from the csv file and is going
+ * Parser for the data. Data comes from the csv file and is going
  *              to be parsed into the model {@link Departure Departure}
  * @author Elia Perenzin, Chiramet Phong Penglerd
  * @year 2016

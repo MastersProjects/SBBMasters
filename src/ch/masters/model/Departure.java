@@ -1,8 +1,7 @@
 package ch.masters.model;
 
 /**
- * 
- * @description Model class with all the informations about the departures. Data
+ * Model class with all the informations about the departures. Data
  *              from csv file and parsed into this class.
  * @author Elia Perenzin, Chiramet Phong Penglerd
  * @year 2016
