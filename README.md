@@ -12,7 +12,7 @@ Module 411 - Design and implement data structures and algorithms
 #### -[Authors](#authors)
 
 ### Description
-The assignment of this project is to read data from a [csv file](#data) and do some simple [functions](#functions) to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
+The assignment of this project is to read data from a **[csv file](#data)** and do some simple **[functions](#functions)** to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
 
 
 ### Assessment Grid
@@ -29,8 +29,10 @@ The assignment of this project is to read data from a [csv file](#data) and do s
 Max. 42 Points; Formula for the mark: (Reached Points / Max. Points) * 5 + 1
 
 
-### Data ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
+### Data 
+![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
 File with data received from school in application folder /resources/data/abfahrten_zhb.csv
+
 **[File](/resources/data/abfahrten_zhb.csv)**
 
 
