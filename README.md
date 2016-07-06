@@ -6,21 +6,21 @@ Module 411 - Design and implement data structures and algorithms
 
 ## Summary
 
-#### -[Assessment Grid](#assessment-grid)
-#### -[Data](#data)
-#### -[Functions](#functions)
-#### -[Structograms](#structograms)
-#### -[Built with](#built-with)
-#### -[Conclusion](#conclusion)
-#### -[Authors](#authors)
+### -[Assessment Grid](#assessment-grid)
+### -[Data](#data)
+### -[Functions](#functions)
+### -[Structograms](#structograms)
+### -[Built with](#built-with)
+### -[Conclusion](#conclusion)
+### -[Authors](#authors)
 
 
-### Description
+## Description
 
 The assignment of this project is to make an application which reads data from a **[csv file](#data)** and do has 3 simple **[functions](#functions)** to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
 
 
-### Assessment Grid
+## Assessment Grid
 
 |                                       |not good |ok       |very good|
 | ------------------------------------- | :-----: | :-----: | :-----: |
@@ -35,7 +35,7 @@ The assignment of this project is to make an application which reads data from a
 Max. 42 Points; Formula for the mark: (Reached Points / Max. Points) * 5 + 1
 
 
-### Data 
+## Data 
 ![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)
 
 File with data received from school in application folder /resources/data/abfahrten_zhb.csv
@@ -43,7 +43,7 @@ File with data received from school in application folder /resources/data/abfahr
 **[File](/resources/data/abfahrten_zhb.csv)**
 
 
-### Functions
+## Functions
 
 **Get All departures from Zurich mainstation**
 ```java
@@ -63,20 +63,20 @@ public ArrayList<Departure> getDeparturestToCity(String city) {}
 ```
 
 
-### Structograms
+## Structograms
 
 ![getPlatformDepartures](/resources/structograms/getPlatformDepartures.png)
 ![getDeparturesToCity](/resources/structograms/getDeparturesToCity.png)
 
 
-### Built With
+## Built With
 
 * Java 8 
 * Eclipse Mars
 * Structorizer
 
 
-### Authors
+## Authors
 
 * **Chiramet Phong Penglerd** - *Code, GUI and Documentation* - [Phong6698](https://github.com/Phong6698)
 * **Elia Perenzin** - *Code and Documentation* - [zperee](https://github.com/zperee)
@@ -84,12 +84,12 @@ public ArrayList<Departure> getDeparturestToCity(String city) {}
 See also the list of [contributors](https://github.com/MastersProjects/SBBMasters/graphs/contributors) who participated in this project.
 
 
-### Conclusion
+## Conclusion
 
 We think the code is very structured and well commented. It was an easy assignment and we had no problems with the implementations. The GUI is responsive and easy to use. Our teamwork was good and we made everything on time.
 
 
-### TODO
+## TODO
 - [x] Functions
 - [x] GUI
 - [x] Validation inputfields
