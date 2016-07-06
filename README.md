@@ -1,6 +1,8 @@
 # SBBMasters ![data](https://img.shields.io/badge/Status-development-orange.svg)
+
 A TBZ school project
 Module 411 - Design and implement data structures and algorithms 
+
 
 ## Summary
 
@@ -9,13 +11,17 @@ Module 411 - Design and implement data structures and algorithms
 #### -[Functions](#functions)
 #### -[Structograms](#structograms)
 #### -[Built with](#built-with)
+#### -[Conclusion](#conclusion)
 #### -[Authors](#authors)
 
+
 ### Description
-The assignment of this project is to read data from a **[csv file](#data)** and do some simple **[functions](#functions)** to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
+
+The assignment of this project is to make an application which reads data from a **[csv file](#data)** and do has 3 simple **[functions](#functions)** to show different informations about the train departures in Zurich. The task is documented on the BSCW, the csv File is also on the BSCW and in our Java solution. 
 
 
 ### Assessment Grid
+
 |                                       |not good |ok       |very good|
 | ------------------------------------- | :-----: | :-----: | :-----: |
 |**Structured code**                    |0        |3        |6        |
@@ -38,6 +44,7 @@ File with data received from school in application folder /resources/data/abfahr
 
 
 ### Functions
+
 **Get All departures from Zurich mainstation**
 ```java
 public ArrayList<Departure> getAllDepartures() {}
@@ -77,10 +84,15 @@ public ArrayList<Departure> getDeparturestToCity(String city) {}
 See also the list of [contributors](https://github.com/MastersProjects/SBBMasters/graphs/contributors) who participated in this project.
 
 
+### Conclusion
+
+We think the code is very structured and well commented. It was an easy assignment and we had no problems with the implementations. The GUI is responsive and easy to use. Our teamwork was good and we made everything on time.
+
+
 ### TODO
 - [x] Functions
 - [x] GUI
 - [x] Validation inputfields
 - [x] Outsource Actionlistener
 - [x] Structograms
-- [ ] Presentation
+- [x] Presentation
