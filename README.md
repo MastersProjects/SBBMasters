@@ -36,11 +36,10 @@ Max. 42 Points; Formula for the mark: (Reached Points / Max. Points) * 5 + 1
 
 
 ## Data 
-[![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)](/resources/data/abfahrten_zhb.csv)
 
+[![data](https://img.shields.io/badge/data-abfahrten__zhb.csv-green.svg)](/resources/data/abfahrten_zhb.csv)
 File with data received from school in application folder /resources/data/abfahrten_zhb.csv
 
-**[File](/resources/data/abfahrten_zhb.csv)**
 
 
 ## Functions
